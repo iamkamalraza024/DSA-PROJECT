@@ -1,0 +1,44 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+// Function Declarations
+void arrayModule();
+void stackModule();
+void queueModule();
+void linkedListModule();
+void treeModule();
+void graphModule();
+void sortingModule();
+void searchingModule();
+
+int main() {
+    int choice;
+    while(1) {
+        printf("\n=== DSA ALL-IN-ONE TOOLKIT ===\n");
+        printf("1. Array Operations\n");
+        printf("2. Stack Operations\n");
+        printf("3. Queue Operations\n");
+        printf("4. Linked List Operations\n");
+        printf("5. Tree Operations\n");
+        printf("6. Graph Operations\n");
+        printf("7. Sorting Algorithms\n");
+        printf("8. Searching Algorithms\n");
+        printf("9. Exit\n");
+        printf("Enter your choice: ");
+        scanf("%d", &choice);
+        
+        switch(choice) {
+            case 1: arrayModule(); break;
+            case 2: stackModule(); break;
+            case 3: queueModule(); break;
+            case 4: linkedListModule(); break;
+            case 5: treeModule(); break;
+            case 6: graphModule(); break;
+            case 7: sortingModule(); break;
+            case 8: searchingModule(); break;
+            case 9: exit(0);
+            default: printf("Invalid Choice! Try again.\n");
+        }
+    }
+    return 0;
+}
